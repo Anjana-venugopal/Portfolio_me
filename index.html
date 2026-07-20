@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anjana V Nair — Portfolio</title>
+<meta name="description" content="Anjana V Nair — B.Tech CSE student, Ex TinkerHub volunteer, developer and artist. Explore art, resume, and projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<canvas id="stars-bg" aria-hidden="true"></canvas>
+<div class="glow-field" aria-hidden="true">
+  <span class="glow-spot glow-violet"></span>
+  <span class="glow-spot glow-coral"></span>
+  <span class="glow-spot glow-mint"></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<button type="button" id="pixelToggle" class="pixel-toggle" aria-pressed="false" title="Launch pixel mode">
+  <span class="pixel-icon" aria-hidden="true"></span>
+  <span class="sr-only">Toggle pixel mode</span>
+</button>
+
+<div id="pixelSpriteGlow" class="pixel-sprite-glow" hidden aria-hidden="true"></div>
+<div id="pixelSprite" class="pixel-sprite" hidden role="button" tabindex="0" aria-label="Pixel girl — click to say hi, or drag her around"></div>
+<button type="button" id="pixelPlayBtn" class="pixel-play-btn" hidden aria-label="Play a mini pixel platformer game">
+  🎮 Play
+</button>
+<div id="pixelGameOverlay" class="pixel-game-overlay" hidden>
+  <div class="pixel-game-panel" role="dialog" aria-modal="true" aria-labelledby="pixelGameTitle">
+    <div class="pixel-game-bar">
+      <span id="pixelGameTitle" class="pixel-game-title">Pixel Hop</span>
+      <button type="button" id="pixelGameClose" class="pixel-game-close" aria-label="Close game">×</button>
+    </div>
+    <canvas id="pixelGameCanvas" width="160" height="90"></canvas>
+    <p class="pixel-game-hint">Arrow keys, or use the controller below · collect every star</p>
+ 
+    <div class="pixel-dpad" aria-label="Game controller">
+      <button type="button" class="dpad-btn dpad-up" data-dir="up" aria-label="Jump">▲</button>
+      <div class="dpad-row">
+        <button type="button" class="dpad-btn dpad-left" data-dir="left" aria-label="Move left">◀</button>
+        <button type="button" class="dpad-btn dpad-down" data-dir="down" aria-label="Fast fall">▼</button>
+        <button type="button" class="dpad-btn dpad-right" data-dir="right" aria-label="Move right">▶</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="#top" class="logo" aria-label="Anjana V Nair, home">
+      <span class="logo-bracket" aria-hidden="true">&lt;</span><span class="logo-text">AVN</span><span class="logo-bracket" aria-hidden="true">/&gt;</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#art">Art</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bento">
+
+      <div class="tile tile-hero-main corner-frame">
+        <p class="eyebrow">// B.tech cse · College of Engineering Attingal</p>
+        <h1>Anjana V Nair</h1>
+        <p class="hero-tagline">I build small tools, lead tech communities, and draw the rest.</p>
+        <div class="hero-cta">
+          <a href="#art" class="btn btn-primary">See the art</a>
+          <a href="#resume" class="btn btn-ghost">View resume</a>
+        </div>
+      </div>
+
+      <div class="tile-photo">
+
+          <img src="photo.jpg" alt="Profile Photo" class="profile-image">
+        
+          <p class="photo-caption">Anjana V Nair<br><span class="mono-tag">Computer Science and Engineering Student</span></p>
+      </div>
+
+      <div class="tile tile-status">
+        <p class="mono-tag">status</p>
+        <p class="status-text">Currently in Semester 3 · CEAL</p>
+        <p class="status-text">Google Student Ambassador 2026</p>
+      </div>
+
+      <div class="tile tile-role">
+        <p class="mono-tag">role</p>
+        <p class="status-text">Google Student Ambassador 2026</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="bento-grid">
+
+      <div class="tile tile-wide">
+        <p class="eyebrow">about</p>
+        <h2 id="about-heading">Hi, I'm Anjana.</h2>
+        <p>I'm a Computer Science and Engineering student at the College of Engineering Attingal, currently in my third semester. Alongside coursework, I serve as Google Student Ambassador, showing up at conclaves and conducting sessions, and looking for the next chance to lead. When I'm not writing Python or wrangling a personal bot into shape, I'm usually sketching.</p>
+      </div>
+
+      <div class="tile tile-quote corner-frame">
+        <p class="quote-mark" aria-hidden="true">“</p>
+        <p class="quote-text">Code the logic, draw the feeling.
+        ~ Anjana</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section class="section" id="art" aria-labelledby="art-heading">
+    <p class="eyebrow section-eyebrow">art</p>
+    <h2 id="art-heading">Selected artwork</h2>
+    <p class="section-lede">A working gallery — swap each tile below with your own piece.</p>
+
+    <div class="bento-grid art-grid">
+
+      <figure class="tile tile-art tile-art-lg">
+        <div class="art-placeholder" style="--tint:var(--accent-coral)">
+          <img src="kanna.jpg" alt="Portrait artwork titled Guruvayoor Kannan in warm coral tones with a subtle graphic background" />
+          <span class="mono-tag">Guruvayoor Kannan</span>
+          </div>
+      <figcaption>Guruvayoor Kannan </figcaption>
+      </figure>
+
+      <figure class="tile tile-art">
+        <div class="art-placeholder" style="--tint:var(--accent-violet)">
+         <img src="art2.jpg" alt="Artwork titled Recreation showing abstract forms and vibrant violet tones in a gallery tile" />
+         <span class="mono-tag">Recreation</span>
+        </div>
+      <figcaption>Recreation </figcaption>
+      </figure>
+
+      <figure class="tile tile-art">
+        <div class="art-placeholder" style="--tint:var(--accent-violet)">
+        <img src="lime.jpg" alt="Still life drawing of lemons with soft shading and lively yellow green hues" />
+          <span class="mono-tag">Lemons</span>
+        </div>
+      <figcaption>Lemons </figcaption>
+      </figure>
+
+      <figure class="tile tile-art tile-art-wide">
+        <div class="art-placeholder" style="--tint:var(--accent-violet)">
+          <img src="cat.jpg" alt="Three cat portraits in pastel colors with expressive eyes on a soft light background conveying gentle curiosity" />
+          <span class="mono-tag">Kitties</span>
+        </div>
+      <figcaption>Kitties </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section" id="resume" aria-labelledby="resume-heading">
+    <p class="eyebrow section-eyebrow">resume</p>
+    <h2 id="resume-heading">Where I've shown up</h2>
+
+    <div class="bento-grid">
+
+      <div class="tile tile-wide">
+        <p class="mono-tag">education</p>
+        <h3>B.Tech Computer Science &amp; Engineering</h3>
+        <p>College of Engineering Attingal (CEAL) · Semester 3, in progress</p>
+      </div>
+
+      <div class="tile">
+        <p class="mono-tag">leadership</p>
+        <ul class="plain-list">
+          <li>Google Student Ambassador 2026</li>
+          <li>Ex First year Coodinator</li>
+        </ul>
+    </div>
+    <div class="tile tile-clickable" onclick="toggleDetails(this)">
+    <!-- The Top part (Visible Screen Door) -->
+    <div class="tile-main-content">
+        <span class="mono-tag">hackathons</span>
+        <ul>
+            <li>NASA Space Apps 2025</li>
+            <li>SIH 2025 (Prelim)</li>
+            <li>Tink-Her-Hack 2026</li>
+            <li>Bharatiya Antariksh Hackathon 2026</li>
+        </ul>
+    </div>
+</div>
+    <!-- The Bottom part (Slides open downwards) -->
+    <div class="tile-details-drawer">
+        <div class="drawer-inner">
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 10px 0;">
+            <h4>Hackathon Achievements & Media</h4>
+            
+            <!-- Upload/Add your hackathon image here -->
+            <img src="sih.jpg" alt="SIH 2025 Hackathon Project Screenshot" class="drawer-media">
+            
+            <p>NASA Space Apps: Developed an Astro Health monitoring solution.</p>
+            <p>SIH 2025: Built an AI framework for Mudra Detection.</p>
+        </div>
+    </div>
+</div><div class="tile tile-clickable" onclick="toggleDetails(this)">
+    <!-- The Top part (Visible Screen Door) -->
+    <div class="tile-main-content">
+        <span class="mono-tag">projects</span>
+        <ul>
+            <li>SafeDrop Bag — project proposal</li>
+            <li>J.A.R.V.I.S personal bot (prototype)</li>
+        </ul>
+    </div>
+
+    <!-- The Bottom part (Slides open downwards) -->
+    <div class="tile-details-drawer">
+        <div class="drawer-inner">
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 10px 0;">
+            <h4>Project Prototypes & Details</h4>
+            
+            <!-- Upload/Add your project image here -->
+            <img src="jarvis.png" alt="J.A.R.V.I.S Bot Prototype" class="drawer-media">
+            
+            <p><strong>SafeDrop Bag:</strong> A conceptual smart-bag proposal for automated logistics.</p>
+            <p><strong>J.A.R.V.I.S personal bot:</strong> A Python-based desktop companion prototype using local language models.</p>
+        </div>
+    </div>
+</div>
+    
+    
+       <div class="tile">
+        <p class="mono-tag">Skills</p>
+        <ul class="plain-list">
+          <li>Leadership</li>
+          <li>Volunteering</li>
+          <li>Frontend Development</li>
+          <li>Event organization</li>
+        </ul>
+      </div>
+
+
+      <div class="tile tile-clickable" onclick="toggleDetails(this)">
+    <!-- The Top part (Visible Screen Door) -->
+    <div class="tile-main-content">
+        <span class="mono-tag">certifications</span>
+        <ul>
+            <li>Nasscom Future Skills</li>
+            <li>Codedex Python Course</li>
+            <li>Google Student Ambassador</li>
+            <!-- Add any other quick certification titles here -->
+        </ul>
+    </div>
+
+    <!-- The Bottom part (Slides open downwards) -->
+    <div class="tile-details-drawer">
+        <div class="drawer-inner">
+            <hr style="border-color: rgba(255,255,255,0.1); margin: 10px 0;">
+            <h4>Credential Verification & Details</h4>
+            
+            <!-- Upload/Add your certificate image or badge here -->
+            <a href="nasscomfutureskill.pdf" target="_blank" class="drawer-media">
+                <img src="Screenshot 2026-07-20 195838.png" alt="Nasscom Certificate">
+            </a>
+             <a href="ehkteozw_1759769337582.pdf" target="_blank" class="drawer-media">
+                <img src="Screenshot 2026-07-20 200948.png" alt="Codedex Python Course">
+           
+            </a>
+            
+            <p><strong>Nasscom Future Skills:</strong> Certified in future skills for the digital economy.</p>
+             <p><strong>Codedex Python Course:</strong> Completed beginner Python programming course with hands-on projects.</p>
+            <p><strong>Google Student Ambassador:</strong> Recognized for leading tech communities, organizing workshops, and driving campus engagement with modern cloud technologies.</p>
+        </div>
+    </div>
+</div>
+
+      <div class="tile tile-resume-cta corner-frame">
+        <p class="mono-tag">full resume</p>
+        <p>Add your resume file to <code>/assets/resume.pdf</code></p>
+        <a href="assets/resume.pdf" class="btn btn-primary" download>Download resume</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills" aria-labelledby="skills-heading">
+    <p class="eyebrow section-eyebrow">skills</p>
+    <h2 id="skills-heading">Tools I reach for</h2>
+
+    <div class="chip-row">
+      <span class="chip">&lt;Python/&gt;</span>
+      <span class="chip">&lt;C/&gt;</span>
+      <span class="chip">&lt;Discord.py/&gt;</span>
+      <span class="chip">&lt;Git &amp; GitHub Copilot/&gt;</span>
+      <span class="chip">&lt;Machine Learning basics/&gt;</span>
+      <span class="chip">&lt;Digital &amp; traditional art/&gt;</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="bento-grid">
+      <div class="tile tile-wide corner-frame">
+        <p class="eyebrow">contact</p>
+        <h2 id="contact-heading">Let's build or draw something.</h2>
+        <p>Add your real details below — email, and any socials you'd like listed.</p>
+        <div class="contact-links">
+          <a href="https://www.gmail.com/anjanavenugopalnair@gmail.com" class="btn btn-primary">Email me</a>
+          <a href="https://github.com/Anjana-venugopal" class="btn btn-ghost">GitHub</a>
+          <a href="https://www.linkedin.com/in/anjanavenugopalnair/" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://www.instagram.com/anjana._.venugopal" class="btn btn-ghost">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Anjana V Nair. Built with a bento grid, kept simple on purpose.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
