@@ -309,13 +309,14 @@ a{ color: inherit; }
   display: flex;
   flex-direction: column;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  height: auto; 
 }
 
 /* The sliding drawer panel */
 .tile-details-drawer {
   display: grid;
-  grid-template-rows: 2fr; /* Collapsed by default */
-  transition: grid-template-rows 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Shoji slide glide */
+  grid-template-rows: 0fr; /* Collapsed by default */
+  transition: grid-template-rows 0.4s ease, opacity 0.3s ease; /* Shoji slide glide */
   overflow: hidden;
 }
 
@@ -326,7 +327,8 @@ a{ color: inherit; }
 
 /* The Magic Trigger: When the card is clicked/active, slide down! */
 .tile-clickable.active .tile-details-drawer {
-  grid-template-rows: 2fr; /* Expands perfectly to match the height of your text content */
+  grid-template-rows: 1fr;
+  opacity : 1; /* Expands perfectly to match the height of your text content */
 }
 
 /* Subtle hover pop effect */
@@ -708,4 +710,19 @@ body.pixel-mode .art-placeholder{ filter: saturate(1.2) contrast(1.05); }
   border-radius: 6px;      /* Matches your bento card corners */
   margin: 12px auto;       /* Centers the image perfectly with space around it */
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* 1. Hide the drawer completely by default */
+.tile-details-drawer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* 2. Open the drawer when the parent tile is clicked */
+.tile.active .tile-details-drawer,
+.tile-clickable.active .tile-details-drawer {
+    max-height: 500px !important; /* Force it to expand */
+    opacity: 1 !important;
+    padding-top: 10px;
 }
