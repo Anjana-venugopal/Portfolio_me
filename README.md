@@ -1,14 +1,14 @@
-# Portfolio Name
+# Portfolio_me
 
-> Briefly describe your portfolio in one sentence.
+> A page that reveals me.
 
 ## Live Demo
 
-🌐 Portfolio: <portfolio-link>
+🌐 Portfolio: https://anjana-venugopal.github.io/Portfolio_me/
 
 ## Repository
 
-📦 GitHub Repository: <repository-link>
+📦 GitHub Repository: 
 
 ---
 
