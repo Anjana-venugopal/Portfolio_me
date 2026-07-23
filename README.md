@@ -2,13 +2,13 @@
 
 > A page that reveals me.
 
-## Live Demo
+##  Demo
 
 🌐 Portfolio: https://anjana-venugopal.github.io/Portfolio_me/
 
 ## Repository
 
-📦 GitHub Repository: 
+📦 GitHub Repository: https://github.com/Anjana-venugopal/Portfolio_me
 
 ---
 
@@ -16,13 +16,13 @@
 
 ## Introduction
 
-Describe yourself and explain the purpose of this portfolio.
+So myself Anjana V Nair and my portfolio represents "me" the true self. So the viewers who visit my webpage will get to know me from more than a "nerd".
 
 ### Goals
 
-- <goal-1>
-- <goal-2>
-- <goal-3>
+- Exposing real version of myself
+- Career Growth
+- Keep updated
 
 ---
 
@@ -32,10 +32,10 @@ Describe yourself and explain the purpose of this portfolio.
 
 Explain:
 
-- What was your initial idea?
-- What inspired this portfolio?
-- What features did you plan to include?
-- What problems were you trying to solve?
+- My basic idea was different compared to one shown it was more tech and cyber but when i thought of myself and real meaning of a "portfolio" I felt to change.
+- The main inspiration was the examples shown in meet.
+- In my portfolio on header tabs you can easily access the main grids, and it has two EASTER EGGS...
+- I was mainly focusing on myself like Who am i and What am i , which I often hide to showcase
 
 ### Early Concepts
 
