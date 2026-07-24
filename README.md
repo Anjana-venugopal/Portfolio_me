@@ -6,6 +6,7 @@
 
 🌐 Portfolio: https://anjana-venugopal.github.io/Portfolio_me/
 
+On clicking the link, it shows 'site not available' I recommend you to copy-paste link to search bar.
 ## Repository
 
 📦 GitHub Repository: https://github.com/Anjana-venugopal/Portfolio_me
@@ -39,28 +40,27 @@ Explain:
 
 ### Early Concepts
 
-Add any sketches, notes, wireframes, screenshots, references, or planning materials used during the early stages.
+My idea was basically in my mind and it was done by multiple trial and error and effort of 6 days.
 
 ---
 
 ## 2. Research & Ideation
 
-Explain your research process.
+So my idea was to use glassmorphism with starry background which shows my artistic nature and sky watcher. I also added bento grid method so that it will be more organised and clean.
 
 ### Topics Researched
 
-Describe any research conducted regarding:
+I researched about UI/UX and came up with the plan
 
-- Portfolio trends
-- UI/UX practices
-- Accessibility
-- Animations
-- Personal branding
-- Other relevant topics
+- most of portfolio that I have seen showed more about the owner of portfolio so I decided to showcase myself.
+- for UI/UX I used shooting stars in glassmorphism and bento grid method
+- It can access all header tabs and can navigate to specified locations.
+- Animation is basically of hover grids and shooting stars.
+- I brande myself in portfolio
 
 ### References
 
-List websites, portfolios, articles, videos, design inspirations, documentation, or other resources that influenced your work.
+My reference and inspiration was our senior's portfolio.
 
 ---
 
@@ -68,19 +68,18 @@ List websites, portfolios, articles, videos, design inspirations, documentation,
 
 ### Design Goals
 
-Describe the goals that guided your design decisions.
+I wanted to keep my portfolio clean and readable.
 
 ### Design Decisions
 
 Explain:
 
-- Color palette selection
-- Typography choices
-- Layout decisions
-- Component structure
-- User experience considerations
-- Accessibility considerations
-- Responsive design decisions
+- I choose space colours like blue, violet, yellow which gave background clean finish.
+- As i mentioned above EASTER EGG I used pixel style and normal classic font.
+- Layout has bento grid and glass polymorphism.
+- Users were satisfied very well due to simple clean structure
+- Accessibility is working and navigates specific locations
+- Portfolio reponses to all navigating tabs and other interactions
 
 ---
 
@@ -88,54 +87,58 @@ Explain:
 
 ### Frontend
 
-- <technology>
-- <technology>
-
+- HTML
+- CSS
+- Javascript
 ### Backend (If Applicable)
 
-- <technology>
-- <technology>
+- Not applicable
 
 ### Design Tools
 
-- <tool>
-- <tool>
+- I designed directly to CSS
 
 ### Deployment Platform
 
-- <platform>
+- Git Hub
 
 ---
 
 ## 5. Development Workflow
 
-Explain how the project was built from start to finish.
+The project to start took one day of ideation at first I was confused where to start How to start then I started with designing Bento grid and Glassmorphism style then 
+day 2 I assembled the contents then ,
+day 3 took completely to repair the layout back to the design ,
+day 4 I pushed to Git and unfortunetly images didn't show up so deleted,
+day 5 Sorted the issuse with help of coodinator of event,
+day 6 I finally deployed but link toke serious defect,
+day 7 Completed Readme.
 
 ### Milestones
 
 #### Phase 1
 
-Describe what was completed during this phase.
+Layout was completed.
 
 #### Phase 2
 
-Describe what was completed during this phase.
+Assembled contents to layout.
 
 #### Phase 3
 
-Describe what was completed during this phase.
+Deployment.
 
 ### Challenges Faced
 
-- <challenge>
-- <challenge>
-- <challenge>
+- Layout changes everytime when new elements are added.
+- Images doesn't apper in localhost
+- Failed deployment.
 
 ### Solutions Implemented
 
-- <solution>
-- <solution>
-- <solution>
+- I kept layout same and changed the position of content so that it sets perfectly.
+- I added folders in structure to store images and files so that it can be accessed in localhost.
+- I deleted exisiting deployment and re-established deployment but still it catches other site on direct link , It's better to copy paste the URL.  
 
 ---
 
@@ -143,26 +146,25 @@ Describe what was completed during this phase.
 
 ### AI Tools Used
 
-List all AI tools used during development.
+ AI tools used during development.
 
-- <tool>
-- <tool>
+- Claude
+- Gemini
 
 ### How AI Helped
 
-Explain how AI contributed to the project, such as:
+AI contributed to the project, such as:
 
-- Brainstorming ideas
-- Content generation or refinement
-- Debugging
-- Design suggestions
-- Accessibility improvements
-- Learning new concepts
-- Other assistance
+- I chose to brainstrom using my brain still took guide from Gemini.
+- Content generation was done by my brain.
+- Debugging was mostly done by me and Gemini gave for complex ones.
+- cLaude built the design that I brainstromed.
+- Accessibility improvements were done by Gemini.
+- I learnt new ways to implement animation to grid with help of Gemini.
 
 ### Personal Contributions
 
-Explain which parts were completed, modified, reviewed, or decided by you.
+For placing my artworks was completely done by myself and no AI was used , then I modified grids and layout and repaired imperfections.
 
 ---
 
@@ -170,18 +172,18 @@ Explain which parts were completed, modified, reviewed, or decided by you.
 
 ### Core Features
 
-- <feature>
-- <feature>
-- <feature>
+- Navigates to specific locations.
+- Sliding Artwork
+- Hidden game
 
 ### Additional Features
 
-- <feature>
-- <feature>
+- On clicking pixel rocket it turns entired page to pixel
+- On clicking unlocks hidden easter egg.
 
 ### Innovative Elements
 
-Describe any unique ideas, interactions, designs, or implementations that make your portfolio stand out.
+
 
 ---
 
