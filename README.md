@@ -236,7 +236,7 @@ https://anjana-venugopal.github.io/Portfolio_me/
 
 ![Mobile](images/mobile.png)
 
-Add screenshots of important sections of your portfolio.
+Other screenshots of My Portfolio
 ![extra](images/ex.png) ![extra](images/ext.png) ![extra](images/extr.png) ![extra](images/extra.png)
 
 ---
