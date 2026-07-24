@@ -183,7 +183,10 @@ For placing my artworks was completely done by myself and no AI was used , then 
 
 ### Innovative Elements
 
-
+- The shooting stars in Glassmorphisam merged with Bento grid.
+- Pixel Game
+- Sliding grid in Bento grid
+I guess these all are unique features in my knowledge.
 
 ---
 
@@ -191,20 +194,20 @@ For placing my artworks was completely done by myself and no AI was used , then 
 
 ### Testing Performed
 
-Describe any testing performed, such as:
+I tested the working of entire webpage on basics of Navigation,Accessibility and Smooth transition
 
-- Cross-browser testing
-- Mobile testing
-- Responsive testing
-- Accessibility testing
-- Performance testing
+- I tested on different web services ana worked successfully.
+- Mobile test was also satisfied.
+- Responsive testing was also satisfied.
+- Accessibility testing was also satisfied.
+- Performance testing was also satisfied.
 
 ### Bugs & Fixes
 
 | Issue | Cause | Solution |
 |---------|---------|---------|
-| | | |
-| | | |
+| failed imageview|no folders | added folders|
+| failed deployment|index.html was not placed correctly |corrected index.html |
 
 ---
 
@@ -212,13 +215,14 @@ Describe any testing performed, such as:
 
 ### Deployment Steps
 
-1. <step>
-2. <step>
-3. <step>
+1. pages
+2. deploy from branch
+3. root
 
 ### Production URL
 
-<portfolio-link>
+https://anjana-venugopal.github.io/Portfolio_me/
+
 
 ---
 
@@ -238,6 +242,6 @@ Add screenshots of important sections of your portfolio.
 
 ## 11. Future Improvements
 
-- <improvement>
-- <improvement>
-- <improvement>
+- Keep updating based on new archievements.
+- Improve each sections with suitable proofs.
+- Add/ remove elements that feels dis-satisfied.
