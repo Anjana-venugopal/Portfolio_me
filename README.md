@@ -230,13 +230,14 @@ https://anjana-venugopal.github.io/Portfolio_me/
 
 ### Home Page
 
-![Home](assets/home.png)
+![Home](images/home.png)
 
 ### Mobile View
 
-![Mobile](assets/mobile.png)
+![Mobile](images/mobile.png)
 
 Add screenshots of important sections of your portfolio.
+![extra](images/ex.png) ![extra](images/ext.png) ![extra](images/extr.png) ![extra](images/extra.png)
 
 ---
 
