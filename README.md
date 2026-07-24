@@ -179,7 +179,7 @@ For placing my artworks was completely done by myself and no AI was used , then 
 ### Additional Features
 
 - On clicking pixel rocket it turns entired page to pixel
-- On clicking unlocks hidden easter egg.
+- On clicking ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️ B A unlocks hidden easter egg.
 
 ### Innovative Elements
 
